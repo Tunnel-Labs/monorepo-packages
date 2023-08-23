@@ -1,1 +1,1 @@
-export { defineNamespace } from './utils/monorepo.js';
+export { getMonorepoRootDirpath } from "./utils/monorepo.js";
