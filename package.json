@@ -1,0 +1,17 @@
+{
+	"name": "@tunnel/get-monorepo-root",
+	"version": "1.0.0",
+	"type": "module",
+	"exports": "./src/index.ts",
+	"scripts": {
+		"build": "ts-node ./scripts/build.ts"
+	},
+	"dependencies": {
+		"map-obj": "5.0.2",
+		"pkg-up": "4.0.0"
+	},
+	"devDependencies": {
+		"lionconfig": "3.0.1",
+		"typescript": "5.1.6"
+	}
+}
