@@ -1,5 +1,5 @@
 {
-	"name": "@tunnel/get-monorepo-root",
+	"name": "@tunnel/get-monorepo",
 	"version": "1.0.0",
 	"type": "module",
 	"exports": "./src/index.ts",

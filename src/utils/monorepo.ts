@@ -2,7 +2,7 @@ import * as fs from "fs";
 import * as path from "path";
 import { fileURLToPath } from "url";
 
-export function getMonorepoRootDirpath(
+export function getMonorepoDirpath(
   curDirectory: string = process.cwd()
 ): string | undefined {
   curDirectory = curDirectory.startsWith("file://")

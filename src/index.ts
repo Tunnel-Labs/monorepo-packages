@@ -1,1 +1,1 @@
-export { getMonorepoRootDirpath } from "./utils/monorepo.js";
+export { getMonorepoDirpath } from "./utils/monorepo.js";
