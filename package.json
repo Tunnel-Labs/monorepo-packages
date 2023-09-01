@@ -1,14 +1,10 @@
 {
-	"name": "@tunnel/get-monorepo",
+	"name": "get-monorepo-root",
 	"version": "1.0.0",
 	"type": "module",
 	"exports": "./src/index.ts",
 	"scripts": {
 		"build": "ts-node ./scripts/build.ts"
-	},
-	"dependencies": {
-		"map-obj": "^5.0.2",
-		"pkg-up": "^4.0.0"
 	},
 	"devDependencies": {
 		"@types/node": "^20.5.3",
