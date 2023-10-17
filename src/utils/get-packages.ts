@@ -63,8 +63,7 @@ export function getMonorepoPackages({
 		const packageJson = JSON.parse(
 			fs.readFileSync(packageJsonFilepath, 'utf8')
 		);
-		const packageSlug = packageJson.name.replace(/^@-\//, '');
-		packageNameToPackageMetadata[packageSlug] = {
+		packageNameToPackageMetadata[packageJson.name] = {
 			packageDirpath: path.dirname(packageJsonFilepath),
 			packageJson
 		};
