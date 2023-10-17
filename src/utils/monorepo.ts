@@ -21,7 +21,7 @@ export function getMonorepoDirpath(
         fs.readFileSync(path.join(curDirectory, "package.json"), "utf8")
       );
 
-      if (packageJson.workspaces !== undefined) {
+      if (packageJson.workspaces !== undefined || packageJson.root) {
         return curDirectory;
       } else {
         maybeRoot = curDirectory;
