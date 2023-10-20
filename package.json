@@ -1,6 +1,6 @@
 {
 	"name": "monorepo-packages",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"type": "module",
 	"exports": "./src/index.ts",
 	"scripts": {
@@ -8,6 +8,7 @@
 	},
 	"dependencies": {
 		"cjs-require": "^1.0.0",
+		"dyrname": "^1.0.2",
 		"just-capitalize": "^3.2.0",
 		"glob": "^10.3.10",
 		"map-obj": "^5.0.2",
