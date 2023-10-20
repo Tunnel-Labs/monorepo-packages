@@ -10,8 +10,11 @@ export function getMonorepoPackages({
 }): {
 	[packageName: string]: { packageDirpath: string; packageJson: PackageJson };
 } {
-	const { glob } = __require('glob') as typeof import('glob');
 	const fs = __require('fs') as typeof import('fs');
+	const { createRequire } = __require('module') as typeof import('module');
+
+	const { glob } = createRequire(__dirname)('glob') as typeof import('glob');
+
 	let packageDirpathGlobs: string[];
 	const packageJsonFilepath = path.join(monorepoDirpath, 'package.json');
 
