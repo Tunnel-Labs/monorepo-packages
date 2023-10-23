@@ -4,7 +4,7 @@
 	"type": "module",
 	"exports": "./src/index.ts",
 	"scripts": {
-		"build": "ts-node ./scripts/build.ts"
+		"build": "tun ./scripts/build.ts"
 	},
 	"dependencies": {
 		"cjs-require": "^1.0.0",
