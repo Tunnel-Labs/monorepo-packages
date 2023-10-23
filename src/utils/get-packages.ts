@@ -45,12 +45,8 @@ export function getMonorepoPackages({
 		}
 
 		packageDirpathGlobs = pnpmWorkspacePackages;
-	} else if (packageJson.root) {
-		packageDirpathGlobs = ['.'];
 	} else {
-		throw new Error(
-			`Monorepo package.json does not include "workspaces" property or "root" property and could not locate pnpm-workspace.yaml file in "${monorepoDirpath}"`
-		);
+		packageDirpathGlobs = ['.'];
 	}
 
 	const packageJsonFilepathsArray = glob.sync(
