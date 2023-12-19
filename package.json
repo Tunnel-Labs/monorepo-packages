@@ -1,13 +1,13 @@
 {
 	"name": "monorepo-packages",
-	"version": "1.1.0",
+	"root": true,
+	"version": "1.1.1",
 	"type": "module",
 	"exports": "./src/index.ts",
 	"scripts": {
 		"build": "tun ./scripts/build.ts"
 	},
 	"dependencies": {
-		"cjs-require": "^1.0.0",
 		"glob": "^10.3.10",
 		"just-capitalize": "^3.2.0",
 		"map-obj": "^5.0.2",

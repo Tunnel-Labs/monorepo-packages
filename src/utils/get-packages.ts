@@ -1,7 +1,8 @@
 import path from 'pathe';
 import yaml from 'yaml';
 import type { PackageJson } from 'type-fest';
-import __require from 'cjs-require';
+import fs from 'node:fs';
+import { createRequire } from 'node:module';
 
 export function getMonorepoPackages({
 	monorepoDirpath
@@ -10,9 +11,6 @@ export function getMonorepoPackages({
 }): {
 	[packageName: string]: { packageDirpath: string; packageJson: PackageJson };
 } {
-	const fs = __require('fs') as typeof import('fs');
-	const { createRequire } = __require('module') as typeof import('module');
-
 	const { glob } = createRequire(
 		typeof __dirname !== 'undefined' ? __dirname : import.meta.url
 	)('glob') as typeof import('glob');
